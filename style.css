@@ -1,19 +1,23 @@
 .jumbotron {
   padding-top: 5rem;
   background-color: #e2edff;
+  background-size: 100%;
 }
 
 #projects {
   padding-top: 5rem;
   background-color: #e2edff;
+  background-size: 100%;
 }
 #about {
   padding-top: 5rem;
   background-color: white;
+  background-size: 100%;
 }
 #contact {
   padding-top: 5cm;
   background-color: white;
+  background-size: 100%;
 }
 
 .gellery-img {

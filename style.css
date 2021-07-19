@@ -12,5 +12,14 @@
   background-color: white;
 }
 #contact {
+  padding-top: 5cm;
   background-color: white;
+}
+
+.gellery-img {
+  width: 100%;
+}
+
+#gallery .row > * {
+  padding: 0mm;
 }

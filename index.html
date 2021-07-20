@@ -26,16 +26,16 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#home">Home</a>
+              <a class="nav-link" aria-current="page" href="#home">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#about">About</a>
+              <a class="nav-link "  href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#projects">Product</a>
+              <a class="nav-link "  href="#projects">Product</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#contact">Contact</a>
+              <a class="nav-link " href="#contact" >Contact</a>
             </li>
           </ul>
         </div>
@@ -241,6 +241,15 @@
       gsap.from(".jumbotron img", {duration: 2, rotateY: 180, opacity: 0, delay: 2 });
       gsap.from('.navbar', {duration: 2, y: -100, opacity: 100, ease:'bounce'});
       gsap.from('.display-4', {duration: 1.5, x: -50, opacity: 0, ease:'elastic', delay: 4});
+    </script>
+    <script>
+      const ul = document.querySelector('.navbar-nav');
+ul.addEventListener('click', (e) => {
+    if (e.target.className == 'nav-link') {
+        ul.querySelectorAll('li a').forEach(el => el.classList.remove("active", "fw-bold"));
+        e.target.classList.add("active", "fw-bold");
+    }
+});
     </script>
   </body>
 </html>
